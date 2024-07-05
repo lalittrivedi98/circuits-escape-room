@@ -1,0 +1,49 @@
+[gd_scene load_steps=3 format=3 uid="uid://bu6fevhsbg0eq"]
+
+[ext_resource type="Texture2D" uid="uid://dflojhmthj1ps" path="res://circback.PNG" id="1_3fv0r"]
+[ext_resource type="Script" path="res://end_screen.gd" id="1_76tnp"]
+
+[node name="end_screen" type="Node2D"]
+script = ExtResource("1_76tnp")
+
+[node name="backgroundColor" type="ColorRect" parent="."]
+offset_right = 1152.0
+offset_bottom = 648.0
+color = Color(0, 0, 0, 1)
+
+[node name="Circback" type="Sprite2D" parent="backgroundColor"]
+position = Vector2(960, 540)
+scale = Vector2(1.03784, 1.19205)
+texture = ExtResource("1_3fv0r")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+offset_right = 1920.0
+offset_bottom = 1080.0
+theme_override_constants/separation = 30
+alignment = 1
+
+[node name="TextEdit" type="LineEdit" parent="VBoxContainer"]
+custom_minimum_size = Vector2(850, 0)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_colors/font_uneditable_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 155
+text = "GREAT JOB"
+alignment = 1
+editable = false
+context_menu_enabled = false
+virtual_keyboard_enabled = false
+shortcut_keys_enabled = false
+middle_mouse_paste_enabled = false
+selecting_enabled = false
+deselect_on_focus_loss_enabled = false
+
+[node name="next" type="Button" parent="VBoxContainer"]
+custom_minimum_size = Vector2(400, 200)
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_font_sizes/font_size = 55
+text = "Proceed"
+
+[connection signal="pressed" from="VBoxContainer/next" to="." method="_on_next_pressed"]

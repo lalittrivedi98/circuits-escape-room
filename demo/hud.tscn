@@ -1,0 +1,16 @@
+[gd_scene load_steps=2 format=3 uid="uid://bk6nbi54csfhr"]
+
+[ext_resource type="Script" path="res://hud.gd" id="1_ghve4"]
+
+[node name="HUD" type="CanvasLayer"]
+script = ExtResource("1_ghve4")
+
+[node name="TimeLeft" type="Label" parent="."]
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_top = -26.0
+offset_right = 40.0
+grow_vertical = 0
+theme_override_font_sizes/font_size = 30
+horizontal_alignment = 1

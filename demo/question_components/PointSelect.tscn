@@ -1,0 +1,23 @@
+[gd_scene load_steps=6 format=3 uid="uid://xmn1btbihf5k"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ul7v5"]
+bg_color = Color(0, 0.635294, 0.952941, 0.615686)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_3kli7"]
+bg_color = Color(0, 1, 0, 0.247059)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_o8407"]
+bg_color = Color(0, 1, 0, 0.494118)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_y1bj5"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_uue0s"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+
+[node name="PointSelect" type="Button"]
+theme_override_styles/normal = SubResource("StyleBoxFlat_ul7v5")
+theme_override_styles/hover = SubResource("StyleBoxFlat_3kli7")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_o8407")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_y1bj5")
+theme_override_styles/focus = SubResource("StyleBoxFlat_uue0s")

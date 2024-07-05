@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://dacpf2ou6ssdt"]
+
+[node name="SubmitBtn" type="Button"]
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/icon_normal_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_pressed_color = Color(0, 1, 0, 1)
+theme_override_font_sizes/font_size = 40
+text = "Submit"

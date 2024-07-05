@@ -1,0 +1,43 @@
+[gd_scene load_steps=3 format=3 uid="uid://ccfrgxaj81d3k"]
+
+[ext_resource type="Texture2D" uid="uid://dflojhmthj1ps" path="res://circback.PNG" id="1_675ku"]
+[ext_resource type="Script" path="res://design_tool.gd" id="1_gyce4"]
+
+[node name="design_tool" type="Node2D"]
+script = ExtResource("1_gyce4")
+
+[node name="background" type="ColorRect" parent="."]
+offset_right = 1850.0
+offset_bottom = 906.0
+color = Color(0, 0, 0, 1)
+
+[node name="Sprite2D" type="Sprite2D" parent="background"]
+position = Vector2(960, 540)
+scale = Vector2(1.03784, 1.19205)
+texture = ExtResource("1_675ku")
+
+[node name="QSelectSubmit" type="Button" parent="background/Sprite2D"]
+offset_left = -35.6509
+offset_top = -31.039
+offset_right = 91.3491
+offset_bottom = 12.961
+text = "Submit"
+
+[node name="StartText" type="TextEdit" parent="."]
+offset_left = 509.0
+offset_top = 71.0
+offset_right = 1436.0
+offset_bottom = 176.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+text = "This tool can be used to create custom questions to be added to the game!
+
+Please select the desired question type from the menu below, then click \"Submit\" to continue."
+
+[node name="QTypeSelect" type="OptionButton" parent="."]
+offset_left = 818.0
+offset_top = 274.0
+offset_right = 1147.0
+offset_bottom = 319.0
+
+[connection signal="pressed" from="background/Sprite2D/QSelectSubmit" to="." method="_on_q_select_submit_pressed"]
+[connection signal="item_selected" from="QTypeSelect" to="." method="_on_q_type_select_item_selected"]

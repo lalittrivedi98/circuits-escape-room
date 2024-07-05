@@ -1,0 +1,41 @@
+[gd_scene load_steps=2 format=3 uid="uid://bow52cgxs6wo4"]
+
+[ext_resource type="Script" path="res://Escape_menu.gd" id="1_lnglu"]
+
+[node name="Menu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_lnglu")
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer"]
+layout_mode = 2
+
+[node name="Play" type="Button" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "Resume"
+
+[node name="Quit" type="Button" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "Quit to menu
+"
+
+[node name="quit2electricboogaloo" type="Button" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "Quit to desktop"
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(34, 65)
+zoom = Vector2(3.015, 3.015)
+
+[connection signal="pressed" from="MarginContainer/VBoxContainer/Play" to="." method="_on_play_pressed"]
+[connection signal="pressed" from="MarginContainer/VBoxContainer/Quit" to="." method="_on_quit_pressed"]
+[connection signal="pressed" from="MarginContainer/VBoxContainer/quit2electricboogaloo" to="." method="_on_quit_2_electricboogaloo_pressed"]

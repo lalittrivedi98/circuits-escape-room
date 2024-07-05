@@ -1,0 +1,118 @@
+[gd_scene load_steps=3 format=3 uid="uid://bla56o540sqk0"]
+
+[ext_resource type="Texture2D" uid="uid://dflojhmthj1ps" path="res://circback.PNG" id="1_dkyeu"]
+[ext_resource type="Script" path="res://point_select.gd" id="1_xippc"]
+
+[node name="PointSelect" type="Node2D"]
+script = ExtResource("1_xippc")
+
+[node name="background" type="ColorRect" parent="."]
+offset_right = 1850.0
+offset_bottom = 906.0
+color = Color(0, 0, 0, 1)
+
+[node name="Sprite2D" type="Sprite2D" parent="background"]
+position = Vector2(960, 540)
+scale = Vector2(1.03784, 1.19205)
+texture = ExtResource("1_dkyeu")
+
+[node name="ImagePathText" type="LineEdit" parent="."]
+offset_left = 625.0
+offset_top = 176.0
+offset_right = 1197.0
+offset_bottom = 223.0
+placeholder_text = "Enter circuit image (PNG) URL here, then click submit to continue"
+
+[node name="ImageSubmit" type="Button" parent="."]
+offset_left = 849.0
+offset_top = 273.0
+offset_right = 976.0
+offset_bottom = 317.0
+text = "Submit"
+
+[node name="QuestionText" type="LineEdit" parent="."]
+offset_left = 228.0
+offset_top = 63.0
+offset_right = 1666.0
+offset_bottom = 200.0
+theme_override_font_sizes/font_size = 25
+placeholder_text = "Enter question text here"
+alignment = 1
+expand_to_text_length = true
+
+[node name="QuestionTextSubmit" type="Button" parent="."]
+offset_left = 849.0
+offset_top = 221.0
+offset_right = 976.0
+offset_bottom = 265.0
+text = "Submit"
+
+[node name="CircuitImage" type="TextureRect" parent="."]
+offset_left = 1.0
+offset_top = 256.0
+offset_right = 1801.0
+offset_bottom = 1056.0
+expand_mode = 3
+
+[node name="AddNew" type="Button" parent="."]
+offset_left = 1748.0
+offset_top = 663.0
+offset_right = 1920.0
+offset_bottom = 744.0
+text = "Add New Point"
+
+[node name="ClearAll" type="Button" parent="."]
+offset_left = 1747.0
+offset_top = 825.0
+offset_right = 1919.0
+offset_bottom = 906.0
+text = "Clear All Points"
+
+[node name="PointSubmit" type="Button" parent="."]
+offset_left = 1747.0
+offset_top = 630.0
+offset_right = 1919.0
+offset_bottom = 711.0
+text = "Confirm Point"
+
+[node name="CorrectnessDropdown" type="OptionButton" parent="."]
+clip_contents = true
+offset_left = 1689.0
+offset_top = 595.0
+offset_right = 1919.0
+offset_bottom = 630.0
+
+[node name="CancelPoint" type="Button" parent="."]
+offset_left = 1747.0
+offset_top = 711.0
+offset_right = 1919.0
+offset_bottom = 792.0
+text = "Cancel Point"
+
+[node name="QSubmit" type="Button" parent="."]
+offset_left = 1747.0
+offset_top = 744.0
+offset_right = 1919.0
+offset_bottom = 825.0
+text = "Save Question"
+
+[node name="PointInstr" type="TextEdit" parent="."]
+offset_left = 443.0
+offset_top = 123.0
+offset_right = 1370.0
+offset_bottom = 179.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 18
+text = "To add an answer point, click two non-adjacent corners of a rectangle about the desired selecatble area."
+
+[connection signal="text_changed" from="ImagePathText" to="." method="_on_image_path_text_text_changed"]
+[connection signal="pressed" from="ImageSubmit" to="." method="_on_image_submit_pressed"]
+[connection signal="text_changed" from="QuestionText" to="." method="_on_question_text_text_changed"]
+[connection signal="pressed" from="QuestionTextSubmit" to="." method="_on_question_text_submit_pressed"]
+[connection signal="gui_input" from="CircuitImage" to="." method="_on_circuit_image_gui_input"]
+[connection signal="pressed" from="AddNew" to="." method="_on_add_new_pressed"]
+[connection signal="pressed" from="ClearAll" to="." method="_on_clear_all_pressed"]
+[connection signal="pressed" from="PointSubmit" to="." method="_on_point_submit_pressed"]
+[connection signal="item_selected" from="CorrectnessDropdown" to="." method="_on_correctness_dropdown_item_selected"]
+[connection signal="pressed" from="CancelPoint" to="." method="_on_cancel_point_pressed"]
+[connection signal="pressed" from="QSubmit" to="." method="_on_q_submit_pressed"]

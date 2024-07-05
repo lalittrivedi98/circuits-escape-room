@@ -1,0 +1,48 @@
+[gd_scene load_steps=3 format=3 uid="uid://ywcuauef1m67"]
+
+[ext_resource type="Script" path="res://question.gd" id="1_bhgpa"]
+[ext_resource type="Texture2D" uid="uid://dflojhmthj1ps" path="res://circback.PNG" id="2_iy763"]
+
+[node name="question" type="Node2D"]
+script = ExtResource("1_bhgpa")
+
+[node name="backgroundColor" type="ColorRect" parent="."]
+offset_right = 1920.0
+offset_bottom = 1080.0
+color = Color(0, 0, 0, 1)
+
+[node name="Circback" type="Sprite2D" parent="backgroundColor"]
+position = Vector2(960, 540)
+scale = Vector2(1.03784, 1.19205)
+texture = ExtResource("2_iy763")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = 1920.0
+offset_bottom = 1080.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 25
+alignment = 1
+
+[node name="questionText" type="TextEdit" parent="VBoxContainer"]
+custom_minimum_size = Vector2(1800, 100)
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_colors/font_readonly_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 25
+text = "Question #7: How many meshes are in the circuit."
+editable = false
+
+[node name="qImage" type="TextureRect" parent="VBoxContainer"]
+custom_minimum_size = Vector2(1800, 800)
+layout_mode = 2
+size_flags_horizontal = 4
+
+[node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 8
+theme_override_constants/separation = 25

@@ -1,0 +1,13 @@
+ea4bc82a6ad023ab7ee23ee620429895
+::res://::1697798228
+circback.PNG::CompressedTexture2D::1906496396743786832::1697795816::1697795817::1::::<><>::
+circuit.PNG::CompressedTexture2D::451130177734744377::1697780720::1697780720::1::::<><>::
+greenbutton.png::CompressedTexture2D::59510177879838535::1697782332::1697782332::1::::<><>::
+greybutton.png::CompressedTexture2D::2810036706195087481::1697782336::1697782336::1::::<><>::
+icon.svg::CompressedTexture2D::8813888591930970086::1697773974::1697773976::1::::<><>::
+main.gd::GDScript::-1::1697784554::0::1::::<>Node2D<>::
+main.tscn::PackedScene::6511939856163818825::1697797579::0::1::::<><>::res://main.gd<>uid://gosbvvfuv68t::::res://circuit.PNG<>uid://bgbg5np002ls8::::res://greybutton.png<>uid://33ehje8ocd0::::res://greenbutton.png
+menu.tscn::PackedScene::7375610444219210927::1697797579::0::1::::<><>::res://menu.gd<>uid://2frym8mi5uvg::::res://circback.PNG
+menu.gd::GDScript::-1::1697796029::0::1::::<>Node2D<>::
+end_screen.tscn::PackedScene::6944068886709680111::1697797644::0::1::::<><>::
+pikayeah.PNG::CompressedTexture2D::4279998350999906793::1697798228::1697798228::1::::<><>::

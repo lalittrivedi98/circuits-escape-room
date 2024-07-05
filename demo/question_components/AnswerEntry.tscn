@@ -1,0 +1,5 @@
+[gd_scene format=3 uid="uid://gbgabv33d838"]
+
+[node name="AnswerEntry" type="TextEdit"]
+custom_minimum_size = Vector2(300, 50)
+placeholder_text = "Placeolder"

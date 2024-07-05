@@ -1,0 +1,38 @@
+[gd_scene load_steps=3 format=3 uid="uid://c5602g3dp2tsx"]
+
+[ext_resource type="Script" path="res://end_screen.gd" id="1_2ryhq"]
+[ext_resource type="Texture2D" uid="uid://b18i7hlsjs14h" path="res://pikayeah.PNG" id="1_3h2b1"]
+
+[node name="EndScreen" type="Node2D"]
+script = ExtResource("1_2ryhq")
+
+[node name="Pikayeah" type="Sprite2D" parent="."]
+position = Vector2(582, 330)
+scale = Vector2(2.38129, 2.45636)
+texture = ExtResource("1_3h2b1")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+offset_left = 403.0
+offset_right = 834.0
+offset_bottom = 184.0
+theme_override_colors/default_color = Color(0.886275, 0.933333, 0.0941176, 1)
+theme_override_colors/font_selected_color = Color(0, 0, 0, 1)
+theme_override_colors/selection_color = Color(0, 0, 0, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_colors/table_odd_row_bg = Color(0, 0, 0, 1)
+theme_override_colors/table_even_row_bg = Color(0, 0, 0, 1)
+theme_override_colors/table_border = Color(0, 0, 0, 1)
+theme_override_font_sizes/normal_font_size = 100
+text = "Nice Job!"
+
+[node name="Button" type="Button" parent="."]
+offset_left = 489.0
+offset_top = 212.0
+offset_right = 699.0
+offset_bottom = 288.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 30
+text = "Return"
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

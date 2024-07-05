@@ -1,0 +1,54 @@
+[gd_scene load_steps=4 format=3 uid="uid://cl2xor02sl3t"]
+
+[ext_resource type="Script" path="res://game_over.gd" id="1_ee2vl"]
+[ext_resource type="Texture2D" uid="uid://bly7beeifu8mv" path="res://background.png" id="2_ypblj"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_t6bth"]
+
+[node name="game_over" type="Node2D"]
+script = ExtResource("1_ee2vl")
+
+[node name="Background" type="Sprite2D" parent="."]
+position = Vector2(958.987, 540.462)
+scale = Vector2(3.00317, 4.3163)
+texture = ExtResource("2_ypblj")
+
+[node name="Label" type="Label" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 530.0
+offset_top = 400.0
+offset_right = 1390.0
+offset_bottom = 608.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(1.02913, 1.02468)
+size_flags_horizontal = 4
+theme_override_colors/font_color = Color(0.494118, 0, 0, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 150
+theme_override_styles/normal = SubResource("StyleBoxEmpty_t6bth")
+text = "GAME OVER"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Button" type="Button" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 847.0
+offset_top = 700.0
+offset_right = 1073.0
+offset_bottom = 782.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "Quit
+"
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

@@ -1,0 +1,84 @@
+[gd_scene load_steps=3 format=3 uid="uid://cf46vusfiu3mg"]
+
+[ext_resource type="Script" path="res://TextEntry.gd" id="1_g6a12"]
+[ext_resource type="Texture2D" uid="uid://dflojhmthj1ps" path="res://circback.PNG" id="2_6mfoq"]
+
+[node name="TextEntry" type="Node2D"]
+script = ExtResource("1_g6a12")
+
+[node name="background" type="ColorRect" parent="."]
+offset_right = 1850.0
+offset_bottom = 906.0
+color = Color(0, 0, 0, 1)
+
+[node name="Sprite2D" type="Sprite2D" parent="background"]
+position = Vector2(960, 540)
+scale = Vector2(1.03784, 1.19205)
+texture = ExtResource("2_6mfoq")
+
+[node name="ImagePathText" type="LineEdit" parent="."]
+offset_left = 667.0
+offset_top = 173.0
+offset_right = 1239.0
+offset_bottom = 220.0
+placeholder_text = "Enter circuit image (PNG) URL here, then click submit to continue"
+
+[node name="ImageSubmit" type="Button" parent="."]
+offset_left = 891.0
+offset_top = 270.0
+offset_right = 1018.0
+offset_bottom = 314.0
+text = "Submit"
+
+[node name="QuestionText" type="LineEdit" parent="."]
+offset_left = 225.0
+offset_top = 22.0
+offset_right = 1663.0
+offset_bottom = 159.0
+theme_override_font_sizes/font_size = 25
+placeholder_text = "Enter question text here, then click submit to continue"
+alignment = 1
+expand_to_text_length = true
+
+[node name="QuestionTextSubmit" type="Button" parent="."]
+offset_left = 889.0
+offset_top = 181.0
+offset_right = 1016.0
+offset_bottom = 225.0
+text = "Submit"
+
+[node name="AnswerPlaceholder" type="LineEdit" parent="."]
+offset_left = 621.0
+offset_top = 113.0
+offset_right = 1308.0
+offset_bottom = 155.0
+placeholder_text = "Enter answer placeholder text here (i.e. Enter an integer (0-9))"
+
+[node name="AnswerSubmit" type="Button" parent="."]
+offset_left = 891.0
+offset_top = 207.0
+offset_right = 1018.0
+offset_bottom = 251.0
+text = "Submit"
+
+[node name="CorrectAnswers" type="LineEdit" parent="."]
+offset_left = 622.0
+offset_top = 158.0
+offset_right = 1306.0
+offset_bottom = 193.0
+placeholder_text = "Enter possible correct answers here, comma separated (i.e. 1,3,5)"
+
+[node name="CircuitImage" type="TextureRect" parent="."]
+offset_left = 1.0
+offset_top = 256.0
+offset_right = 1801.0
+offset_bottom = 1056.0
+expand_mode = 3
+
+[connection signal="text_changed" from="ImagePathText" to="." method="_on_image_path_text_text_changed"]
+[connection signal="pressed" from="ImageSubmit" to="." method="_on_image_submit_pressed"]
+[connection signal="text_changed" from="QuestionText" to="." method="_on_question_text_text_changed"]
+[connection signal="pressed" from="QuestionTextSubmit" to="." method="_on_question_text_submit_pressed"]
+[connection signal="text_changed" from="AnswerPlaceholder" to="." method="_on_answer_placeholder_text_changed"]
+[connection signal="pressed" from="AnswerSubmit" to="." method="_on_answer_submit_pressed"]
+[connection signal="text_changed" from="CorrectAnswers" to="." method="_on_correct_answers_text_changed"]

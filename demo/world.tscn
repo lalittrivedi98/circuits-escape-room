@@ -1,0 +1,3624 @@
+[gd_scene load_steps=61 format=3 uid="uid://dsb7vaxeckwst"]
+
+[ext_resource type="Texture2D" uid="uid://bpfudhtnmkhgn" path="res://Tileset/Tile_17.png" id="1_di548"]
+[ext_resource type="Script" path="res://world.gd" id="1_rj0ic"]
+[ext_resource type="Texture2D" uid="uid://bcv4q6crna8sr" path="res://Tileset/Tile_19.png" id="2_73w4e"]
+[ext_resource type="Script" path="res://Player.gd" id="2_q0hiu"]
+[ext_resource type="Texture2D" uid="uid://bnbn1oelk0knx" path="res://Tileset/Tile_01.png" id="3_5bqsk"]
+[ext_resource type="Texture2D" uid="uid://dl3m15d0tlfem" path="res://Tileset/Tile_03.png" id="4_pumwt"]
+[ext_resource type="Texture2D" uid="uid://dr3e5i0niymd" path="res://Tileset/Tile_18.png" id="5_vhfvh"]
+[ext_resource type="Texture2D" uid="uid://18g2gkunx7l2" path="res://Tileset/Tile_09.png" id="6_4aeqn"]
+[ext_resource type="Texture2D" uid="uid://dimh5p5rrjdw5" path="res://Tileset/Tile_11.png" id="7_kh0u2"]
+[ext_resource type="Texture2D" uid="uid://dg3608qx73pu2" path="res://Tileset/Tile_12.png" id="7_wch6y"]
+[ext_resource type="Texture2D" uid="uid://d4iqpkl1uu6w0" path="res://Tileset/Tile_20.png" id="8_qx6rv"]
+[ext_resource type="Texture2D" uid="uid://cwomrpcajiqjr" path="res://Tileset/Tile_28.png" id="9_s82gu"]
+[ext_resource type="Texture2D" uid="uid://3x0xrtk01p2q" path="res://Tileset/Tile_10.png" id="10_4jmmu"]
+[ext_resource type="Texture2D" uid="uid://dwjodoflnhvlh" path="res://Tileset/Tile_04.png" id="10_48asw"]
+[ext_resource type="Texture2D" uid="uid://db4o72iuc1xuc" path="res://Tileset/Tile_43.png" id="11_jfg8e"]
+[ext_resource type="Texture2D" uid="uid://cyfjxgp5va1ml" path="res://Tileset/Tile_02.png" id="13_ean26"]
+[ext_resource type="Texture2D" uid="uid://8d267j103h17" path="res://Tileset/Card.png" id="14_gxidb"]
+[ext_resource type="Texture2D" uid="uid://bgdokte1fqocd" path="res://Tileset/Tile_50.png" id="14_qbfje"]
+[ext_resource type="Texture2D" uid="uid://nin16e6r88lh" path="res://Tileset/Tile_34.png" id="15_0jk22"]
+[ext_resource type="Texture2D" uid="uid://c273g3wv6imts" path="res://Tileset/Tile_52.png" id="16_tdigo"]
+[ext_resource type="Texture2D" uid="uid://co8g0im5cjn08" path="res://Tileset/Tile_53.png" id="17_6cboy"]
+[ext_resource type="Script" path="res://interactions.gd" id="17_m2obw"]
+[ext_resource type="Texture2D" uid="uid://8flhr4tpq46g" path="res://Tileset/Tile_60.png" id="22_3yg42"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_gvav8"]
+size = Vector2(66, 12.125)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_crufc"]
+size = Vector2(66, 16)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_jkxfd"]
+size = Vector2(16, 64)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_g16uk"]
+size = Vector2(20.5625, 64)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_rtmnv"]
+size = Vector2(1936, 16)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_eunna"]
+size = Vector2(20.5, 1032)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_nrl2g"]
+size = Vector2(0.247502, 152.987)
+
+[sub_resource type="SegmentShape2D" id="SegmentShape2D_biptr"]
+a = Vector2(-48, 8)
+b = Vector2(16, 8)
+
+[sub_resource type="SegmentShape2D" id="SegmentShape2D_biluo"]
+a = Vector2(-72, 408)
+b = Vector2(-72, 272)
+
+[sub_resource type="SegmentShape2D" id="SegmentShape2D_263g7"]
+a = Vector2(0, -4)
+b = Vector2(0, 64)
+
+[sub_resource type="SegmentShape2D" id="SegmentShape2D_dj2k3"]
+b = Vector2(0, 68)
+
+[sub_resource type="SegmentShape2D" id="SegmentShape2D_2ioqw"]
+a = Vector2(-12, 12)
+b = Vector2(44, 12)
+
+[sub_resource type="SegmentShape2D" id="SegmentShape2D_81ft1"]
+b = Vector2(184, 0)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_tl5au"]
+size = Vector2(59, 56)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_wp35a"]
+size = Vector2(56, 116)
+
+[sub_resource type="SegmentShape2D" id="SegmentShape2D_2yjlk"]
+a = Vector2(-8, -48)
+b = Vector2(56, 16)
+
+[sub_resource type="SegmentShape2D" id="SegmentShape2D_57128"]
+a = Vector2(72, 8)
+b = Vector2(8, 8)
+
+[sub_resource type="SegmentShape2D" id="SegmentShape2D_wxfh7"]
+a = Vector2(-256, 16)
+b = Vector2(0, 16)
+
+[sub_resource type="SegmentShape2D" id="SegmentShape2D_f7atw"]
+a = Vector2(-128, 0)
+b = Vector2(0, 0)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_p5ru3"]
+size = Vector2(1944, 20)
+
+[sub_resource type="GDScript" id="GDScript_86275"]
+script/source = "extends Sprite2D
+
+
+# Called when the node enters the scene tree for the first time.
+func _ready():
+	pass # Replace with function body.
+
+
+# Called every frame. 'delta' is the elapsed time since the previous frame.
+func _process(_delta):
+	pass
+"
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_wx086"]
+size = Vector2(32, 29.9575)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_rg2uj"]
+size = Vector2(32, 21.5638)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_4t312"]
+size = Vector2(16, 10.8936)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_1mki6"]
+size = Vector2(31.9999, 16.3405)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_h5dq5"]
+size = Vector2(32, 32.6809)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_u6qvc"]
+size = Vector2(20, 29)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_kfuwm"]
+atlas = ExtResource("14_gxidb")
+region = Rect2(0, 0, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5m15j"]
+atlas = ExtResource("14_gxidb")
+region = Rect2(24, 0, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8j7xr"]
+atlas = ExtResource("14_gxidb")
+region = Rect2(48, 0, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_eeip7"]
+atlas = ExtResource("14_gxidb")
+region = Rect2(72, 0, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7syc3"]
+atlas = ExtResource("14_gxidb")
+region = Rect2(96, 0, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_o1624"]
+atlas = ExtResource("14_gxidb")
+region = Rect2(120, 0, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_dx6ev"]
+atlas = ExtResource("14_gxidb")
+region = Rect2(144, 0, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hs757"]
+atlas = ExtResource("14_gxidb")
+region = Rect2(168, 0, 24, 24)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_vwpf1"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_kfuwm")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5m15j")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8j7xr")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_eeip7")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7syc3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_o1624")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_dx6ev")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hs757")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 7.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_ybjv3"]
+radius = 24.0
+
+[node name="World" type="Node2D"]
+script = ExtResource("1_rj0ic")
+
+[node name="corners" type="StaticBody2D" parent="."]
+position = Vector2(-40, 1048)
+
+[node name="sw_south_collision" type="CollisionShape2D" parent="corners"]
+position = Vector2(80, 30.0625)
+shape = SubResource("RectangleShape2D_gvav8")
+
+[node name="se_south_collision" type="CollisionShape2D" parent="corners"]
+position = Vector2(1928, 32)
+shape = SubResource("RectangleShape2D_crufc")
+
+[node name="se_east_collision" type="CollisionShape2D" parent="corners"]
+position = Vector2(1960, 8)
+shape = SubResource("RectangleShape2D_jkxfd")
+
+[node name="sw_west_collision" type="CollisionShape2D" parent="corners"]
+position = Vector2(40, 8)
+shape = SubResource("RectangleShape2D_g16uk")
+
+[node name="sw_corner" type="Sprite2D" parent="corners"]
+show_behind_parent = true
+visibility_layer = 5
+y_sort_enabled = true
+position = Vector2(72, 8)
+scale = Vector2(2, 2)
+texture = ExtResource("1_di548")
+
+[node name="se_corner" type="Sprite2D" parent="corners"]
+position = Vector2(1928, 8)
+scale = Vector2(2, 2)
+texture = ExtResource("2_73w4e")
+
+[node name="nw_corner" type="Sprite2D" parent="corners"]
+position = Vector2(72, -1016)
+scale = Vector2(2, 2)
+texture = ExtResource("3_5bqsk")
+
+[node name="ne_corner" type="Sprite2D" parent="corners"]
+position = Vector2(1928, -1016)
+scale = Vector2(2, 2)
+texture = ExtResource("4_pumwt")
+
+[node name="floor" type="StaticBody2D" parent="."]
+position = Vector2(800, 1056)
+
+[node name="floor_collision" type="CollisionShape2D" parent="floor"]
+position = Vector2(160, 24)
+shape = SubResource("RectangleShape2D_rtmnv")
+
+[node name="f1" type="Sprite2D" parent="floor"]
+position = Vector2(-704, 0)
+scale = Vector2(2, 2)
+texture = ExtResource("5_vhfvh")
+
+[node name="f2" type="Sprite2D" parent="floor"]
+position = Vector2(-640, 0)
+scale = Vector2(2, 2)
+texture = ExtResource("5_vhfvh")
+
+[node name="f3" type="Sprite2D" parent="floor"]
+position = Vector2(-576, 0)
+scale = Vector2(2, 2)
+texture = ExtResource("5_vhfvh")
+
+[node name="f4" type="Sprite2D" parent="floor"]
+position = Vector2(-512, 0)
+scale = Vector2(2, 2)
+texture = ExtResource("5_vhfvh")
+
+[node name="f5" type="Sprite2D" parent="floor"]
+position = Vector2(-448, 0)
+scale = Vector2(2, 2)
+texture = ExtResource("5_vhfvh")
+
+[node name="f6" type="Sprite2D" parent="floor"]
+position = Vector2(-384, 0)
+scale = Vector2(2, 2)
+texture = ExtResource("5_vhfvh")
+
+[node name="f7" type="Sprite2D" parent="floor"]
+position = Vector2(-320, 0)
+scale = Vector2(2, 2)
+texture = ExtResource("5_vhfvh")
+
+[node name="f9" type="Sprite2D" parent="floor"]
+position = Vector2(-192, 0)
+scale = Vector2(2, 2)
+texture = ExtResource("5_vhfvh")
+
+[node name="f13" type="Sprite2D" parent="floor"]
+scale = Vector2(2, 2)
+texture = ExtResource("5_vhfvh")
+
+[node name="f14" type="Sprite2D" parent="floor"]
+position = Vector2(64, 0)
+scale = Vector2(2, 2)
+texture = ExtResource("5_vhfvh")
+
+[node name="f15" type="Sprite2D" parent="floor"]
+position = Vector2(192, 0)
+scale = Vector2(2, 2)
+texture = ExtResource("5_vhfvh")
+
+[node name="f16" type="Sprite2D" parent="floor"]
+position = Vector2(256, 0)
+scale = Vector2(2, 2)
+texture = ExtResource("5_vhfvh")
+
+[node name="f17" type="Sprite2D" parent="floor"]
+position = Vector2(320, 0)
+scale = Vector2(2, 2)
+texture = ExtResource("5_vhfvh")
+
+[node name="f18" type="Sprite2D" parent="floor"]
+position = Vector2(384, 0)
+scale = Vector2(2, 2)
+texture = ExtResource("5_vhfvh")
+
+[node name="f19" type="Sprite2D" parent="floor"]
+position = Vector2(448, 0)
+scale = Vector2(2, 2)
+texture = ExtResource("5_vhfvh")
+
+[node name="f20" type="Sprite2D" parent="floor"]
+position = Vector2(512, 0)
+scale = Vector2(2, 2)
+texture = ExtResource("5_vhfvh")
+
+[node name="f21" type="Sprite2D" parent="floor"]
+position = Vector2(576, 0)
+scale = Vector2(2, 2)
+texture = ExtResource("5_vhfvh")
+
+[node name="f22" type="Sprite2D" parent="floor"]
+position = Vector2(640, 0)
+scale = Vector2(2, 2)
+texture = ExtResource("5_vhfvh")
+
+[node name="f23" type="Sprite2D" parent="floor"]
+position = Vector2(704, 0)
+scale = Vector2(2, 2)
+texture = ExtResource("5_vhfvh")
+
+[node name="f24" type="Sprite2D" parent="floor"]
+position = Vector2(768, 0)
+scale = Vector2(2, 2)
+texture = ExtResource("5_vhfvh")
+
+[node name="f25" type="Sprite2D" parent="floor"]
+position = Vector2(832, 0)
+scale = Vector2(2, 2)
+texture = ExtResource("5_vhfvh")
+
+[node name="f26" type="Sprite2D" parent="floor"]
+position = Vector2(896, 0)
+scale = Vector2(2, 2)
+texture = ExtResource("5_vhfvh")
+
+[node name="f27" type="Sprite2D" parent="floor"]
+position = Vector2(960, 0)
+scale = Vector2(2, 2)
+texture = ExtResource("5_vhfvh")
+
+[node name="f28" type="Sprite2D" parent="floor"]
+position = Vector2(1024, 0)
+scale = Vector2(2, 2)
+texture = ExtResource("5_vhfvh")
+
+[node name="west_wall" type="StaticBody2D" parent="."]
+position = Vector2(-32, 992)
+
+[node name="west_collision" type="CollisionShape2D" parent="west_wall"]
+position = Vector2(32, -484)
+shape = SubResource("RectangleShape2D_eunna")
+
+[node name="w1" type="Sprite2D" parent="west_wall"]
+position = Vector2(64, 0)
+scale = Vector2(2, 2)
+texture = ExtResource("6_4aeqn")
+
+[node name="w3" type="Sprite2D" parent="west_wall"]
+position = Vector2(64, -128)
+scale = Vector2(2, 2)
+texture = ExtResource("6_4aeqn")
+
+[node name="w4" type="Sprite2D" parent="west_wall"]
+position = Vector2(64, -192)
+scale = Vector2(2, 2)
+texture = ExtResource("6_4aeqn")
+
+[node name="w5" type="Sprite2D" parent="west_wall"]
+position = Vector2(64, -256)
+scale = Vector2(2, 2)
+texture = ExtResource("6_4aeqn")
+
+[node name="w6" type="Sprite2D" parent="west_wall"]
+position = Vector2(64, -320)
+scale = Vector2(2, 2)
+texture = ExtResource("6_4aeqn")
+
+[node name="w7" type="Sprite2D" parent="west_wall"]
+position = Vector2(64, -384)
+scale = Vector2(2, 2)
+texture = ExtResource("6_4aeqn")
+
+[node name="w8" type="Sprite2D" parent="west_wall"]
+position = Vector2(64, -448)
+scale = Vector2(2, 2)
+texture = ExtResource("6_4aeqn")
+
+[node name="w9" type="Sprite2D" parent="west_wall"]
+position = Vector2(64, -512)
+scale = Vector2(2, 2)
+texture = ExtResource("6_4aeqn")
+
+[node name="w10" type="Sprite2D" parent="west_wall"]
+position = Vector2(64, -576)
+scale = Vector2(2, 2)
+texture = ExtResource("6_4aeqn")
+
+[node name="w11" type="Sprite2D" parent="west_wall"]
+position = Vector2(64, -640)
+scale = Vector2(2, 2)
+texture = ExtResource("6_4aeqn")
+
+[node name="w12" type="Sprite2D" parent="west_wall"]
+position = Vector2(64, -704)
+scale = Vector2(2, 2)
+texture = ExtResource("6_4aeqn")
+
+[node name="w13" type="Sprite2D" parent="west_wall"]
+position = Vector2(64, -768)
+scale = Vector2(2, 2)
+texture = ExtResource("6_4aeqn")
+
+[node name="w14" type="Sprite2D" parent="west_wall"]
+position = Vector2(64, -832)
+scale = Vector2(2, 2)
+texture = ExtResource("6_4aeqn")
+
+[node name="w15" type="Sprite2D" parent="west_wall"]
+position = Vector2(64, -896)
+scale = Vector2(2, 2)
+texture = ExtResource("6_4aeqn")
+
+[node name="east_wall" type="StaticBody2D" parent="."]
+position = Vector2(2024, 528)
+rotation = 3.14159
+scale = Vector2(64.6455, 6.82582)
+
+[node name="east_collision" type="CollisionShape2D" parent="east_wall"]
+position = Vector2(1.60877, 3.20414)
+scale = Vector2(0.999999, 1)
+shape = SubResource("RectangleShape2D_nrl2g")
+
+[node name="w1" type="Sprite2D" parent="east_wall"]
+position = Vector2(2.10376, -67.9772)
+scale = Vector2(-0.0309379, 0.293005)
+texture = ExtResource("7_kh0u2")
+
+[node name="w2" type="Sprite2D" parent="east_wall"]
+position = Vector2(2.10378, -58.792)
+scale = Vector2(-0.0309379, 0.304939)
+texture = ExtResource("7_kh0u2")
+
+[node name="w3" type="Sprite2D" parent="east_wall"]
+position = Vector2(2.10382, -49.4158)
+rotation = -3.14159
+scale = Vector2(0.030938, -0.304939)
+texture = ExtResource("7_kh0u2")
+
+[node name="w4" type="Sprite2D" parent="east_wall"]
+position = Vector2(2.10376, -39.8487)
+rotation = -3.14159
+scale = Vector2(0.0309379, -0.293005)
+texture = ExtResource("7_kh0u2")
+
+[node name="w5" type="Sprite2D" parent="east_wall"]
+position = Vector2(2.10376, -30.568)
+rotation = -3.14159
+scale = Vector2(0.0309379, -0.298972)
+texture = ExtResource("7_kh0u2")
+
+[node name="w6" type="Sprite2D" parent="east_wall"]
+position = Vector2(2.10376, -21.0964)
+scale = Vector2(-0.0309379, 0.293005)
+texture = ExtResource("7_kh0u2")
+
+[node name="w7" type="Sprite2D" parent="east_wall"]
+position = Vector2(2.10376, -11.7202)
+scale = Vector2(-0.0309379, 0.298972)
+texture = ExtResource("7_kh0u2")
+
+[node name="w8" type="Sprite2D" parent="east_wall"]
+position = Vector2(2.10382, -2.34402)
+rotation = -3.14159
+scale = Vector2(0.0309379, -0.293005)
+texture = ExtResource("7_kh0u2")
+
+[node name="w9" type="Sprite2D" parent="east_wall"]
+position = Vector2(2.10382, 7.03214)
+rotation = -3.14159
+scale = Vector2(0.0309379, -0.298972)
+texture = ExtResource("7_kh0u2")
+
+[node name="w10" type="Sprite2D" parent="east_wall"]
+position = Vector2(2.10376, 16.4083)
+scale = Vector2(-0.0309379, 0.293005)
+texture = ExtResource("7_kh0u2")
+
+[node name="w11" type="Sprite2D" parent="east_wall"]
+position = Vector2(2.10376, 25.7844)
+rotation = -3.14159
+scale = Vector2(0.0309379, -0.298972)
+texture = ExtResource("7_kh0u2")
+
+[node name="w12" type="Sprite2D" parent="east_wall"]
+position = Vector2(2.10378, 35.1606)
+rotation = -3.14159
+scale = Vector2(0.0296817, 0.29626)
+texture = ExtResource("7_kh0u2")
+
+[node name="w13" type="Sprite2D" parent="east_wall"]
+position = Vector2(2.10378, 63.2891)
+rotation = -3.14159
+scale = Vector2(0.0309379, 0.29256)
+texture = ExtResource("7_kh0u2")
+
+[node name="w14" type="Sprite2D" parent="east_wall"]
+position = Vector2(2.10378, 53.9129)
+rotation = -3.14159
+scale = Vector2(0.0306963, 0.293005)
+texture = ExtResource("7_kh0u2")
+
+[node name="w15" type="Sprite2D" parent="east_wall"]
+position = Vector2(2.10378, 44.5368)
+rotation = -3.14159
+scale = Vector2(0.0304545, 0.29626)
+texture = ExtResource("7_kh0u2")
+
+[node name="interior_tiles_set1" type="StaticBody2D" parent="."]
+position = Vector2(224, 904)
+
+[node name="Sprite2D" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(-128, 24)
+scale = Vector2(2, 2)
+texture = ExtResource("5_vhfvh")
+
+[node name="Sprite2D2" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(-64, 88)
+scale = Vector2(2, 2)
+texture = ExtResource("5_vhfvh")
+
+[node name="Sprite2D3" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(-64, 24)
+scale = Vector2(2, 2)
+texture = ExtResource("5_vhfvh")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="interior_tiles_set1"]
+position = Vector2(80, 40)
+shape = SubResource("SegmentShape2D_biptr")
+one_way_collision = true
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="interior_tiles_set1"]
+position = Vector2(-112, 40)
+shape = SubResource("SegmentShape2D_biptr")
+one_way_collision = true
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="interior_tiles_set1"]
+position = Vector2(-176, 40)
+shape = SubResource("SegmentShape2D_biptr")
+one_way_collision = true
+
+[node name="Sprite2D" type="Sprite2D" parent="interior_tiles_set1/CollisionShape2D3"]
+position = Vector2(-16, -16)
+scale = Vector2(2, 2)
+texture = ExtResource("1_di548")
+
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="interior_tiles_set1"]
+position = Vector2(-48, 40)
+shape = SubResource("SegmentShape2D_biptr")
+one_way_collision = true
+
+[node name="Sprite2D4" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(-64, -40)
+scale = Vector2(2, 2)
+texture = ExtResource("5_vhfvh")
+
+[node name="Sprite2D5" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(-64, -104)
+scale = Vector2(2.01562, 2)
+texture = ExtResource("5_vhfvh")
+
+[node name="Sprite2D8" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(0, -104)
+scale = Vector2(2, 2)
+texture = ExtResource("5_vhfvh")
+
+[node name="Sprite2D9" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(64, -104)
+scale = Vector2(2, 2)
+texture = ExtResource("5_vhfvh")
+
+[node name="Sprite2D10" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(128, -104)
+scale = Vector2(2, 2)
+texture = ExtResource("5_vhfvh")
+
+[node name="CollisionShape2D5" type="CollisionShape2D" parent="interior_tiles_set1"]
+position = Vector2(-48, -24)
+shape = SubResource("SegmentShape2D_biptr")
+one_way_collision = true
+
+[node name="CollisionShape2D6" type="CollisionShape2D" parent="interior_tiles_set1"]
+position = Vector2(-48, -88)
+shape = SubResource("SegmentShape2D_biptr")
+one_way_collision = true
+
+[node name="CollisionShape2D7" type="CollisionShape2D" parent="interior_tiles_set1"]
+position = Vector2(-48, 104)
+shape = SubResource("SegmentShape2D_biptr")
+one_way_collision = true
+
+[node name="CollisionShape2D8" type="CollisionShape2D" parent="interior_tiles_set1"]
+position = Vector2(16, -88)
+shape = SubResource("SegmentShape2D_biptr")
+one_way_collision = true
+
+[node name="CollisionShape2D9" type="CollisionShape2D" parent="interior_tiles_set1"]
+position = Vector2(80, -88)
+shape = SubResource("SegmentShape2D_biptr")
+one_way_collision = true
+
+[node name="CollisionShape2D10" type="CollisionShape2D" parent="interior_tiles_set1"]
+position = Vector2(144, -88)
+shape = SubResource("SegmentShape2D_biptr")
+one_way_collision = true
+
+[node name="CollisionShape2D11" type="CollisionShape2D" parent="interior_tiles_set1"]
+position = Vector2(104, -352)
+shape = SubResource("SegmentShape2D_biluo")
+
+[node name="CollisionShape2D12" type="CollisionShape2D" parent="interior_tiles_set1"]
+position = Vector2(168, -352)
+shape = SubResource("SegmentShape2D_biluo")
+
+[node name="Sprite2D6" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(64, -40)
+scale = Vector2(2, 2)
+texture = ExtResource("7_wch6y")
+
+[node name="Sprite2D305" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(64, 24)
+scale = Vector2(2, 2)
+texture = ExtResource("8_qx6rv")
+
+[node name="Sprite2D7" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(-128, 89.5)
+scale = Vector2(2, 2.09375)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D12" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(128, -40.5)
+scale = Vector2(2, 2.03125)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D11" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(-128, -40)
+scale = Vector2(2, 2)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D13" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(0, -40)
+scale = Vector2(2, 2.09375)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D14" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(0, 24)
+scale = Vector2(2, 2.09375)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D15" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(0, 88)
+scale = Vector2(2, 2.09375)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D16" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(64, 88)
+scale = Vector2(2, 2.09375)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D17" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(128, 88)
+scale = Vector2(2, 2.09375)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D18" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(128, 24)
+scale = Vector2(2, 2.09375)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D19" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(-128, -103.25)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D20" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(-128, -168)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D21" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(-64, -168)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D22" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(0, -168)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D23" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(64, -168)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D24" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(128, -168)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D25" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(-128, -232)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D26" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(-64, -232)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D27" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(0, -232)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D28" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(64, -232)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D29" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(128, -232)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D30" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(128, -232)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D71" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(-128, -679.25)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D72" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(-64, -679.25)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D73" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(0, -679.25)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D74" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(64, -679.25)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D75" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(128, -679.25)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D76" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(-128, -743.25)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D77" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(-64, -743.25)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D78" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(0, -743.25)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D79" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(64, -743.25)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D80" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(128, -743.25)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D81" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(-128, -807.25)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D82" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(-64, -807.25)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D83" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(0, -807.25)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D84" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(64, -807.25)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D85" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(128, -807.25)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D86" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(-128, -487.25)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D87" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(-64, -487.25)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D88" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(0, -487.25)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D89" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(64, -487.25)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D90" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(128, -487.25)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D101" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(-128, -423.25)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D102" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(-64, -423.25)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D103" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(0, -423.25)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D104" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(64, -423.25)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D105" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(128, -423.25)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D106" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(-128, -359.25)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D107" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(-64, -359.25)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D108" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(0, -359.25)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D109" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(64, -360)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D110" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(128, -360)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D111" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(-128, -295.25)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D112" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(-64, -295.25)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D113" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(0, -295.25)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D114" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(64, -295.25)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D115" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(128, -295.25)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D91" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(-128, -551.25)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D92" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(-64, -551.25)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D93" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(0, -551.25)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D94" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(64, -551.25)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D95" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(128, -551.25)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D96" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(-128, -615.25)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D97" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(-64, -615.25)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D98" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(0, -615.25)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D99" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(64, -615.25)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D100" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(128, -615.25)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D31" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(192, -168)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D32" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(256, -168)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D33" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(320, -168)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D34" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(384, -168)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D35" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(536, -272)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D36" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(192, -232)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D39" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(384, -232)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D40" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(448, -232)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D41" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(448, -232)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D116" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(192, -679.25)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D117" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(256, -679.25)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D118" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(320, -679.25)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D119" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(384, -679.25)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D120" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(448, -679.25)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D121" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(192, -743.25)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D122" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(256, -743.25)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D123" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(320, -743.25)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D124" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(384, -743.25)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D125" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(448, -743.25)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D126" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(192, -807.25)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D127" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(256, -807.25)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D128" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(320, -807.25)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D129" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(384, -807.25)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D130" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(448, -807.25)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D131" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(192, -487.25)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D132" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(256, -487.25)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D133" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(320, -487.25)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D134" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(384, -487.25)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D135" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(448, -487.25)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D136" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(192, -423.25)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D137" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(256, -423.25)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D138" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(320, -423.25)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D139" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(384, -423.25)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D140" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(448, -423.25)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D141" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(192, -359.25)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D142" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(256, -359.25)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D143" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(320, -359.25)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D144" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(384, -359.25)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D146" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(192, -295.25)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D147" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(256, -295.25)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="CollisionShape2D13" type="CollisionShape2D" parent="interior_tiles_set1"]
+position = Vector2(144, 168)
+shape = SubResource("SegmentShape2D_biptr")
+one_way_collision = true
+
+[node name="Sprite2D335" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(192, 88)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D336" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(256, 88)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D337" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(192, 24)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D338" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(256, 24)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D339" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(192, -103.25)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D340" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(256, -103.25)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D341" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(192, -39.2501)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D342" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(256, -39.2501)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="CollisionShape2D14" type="CollisionShape2D" parent="interior_tiles_set1"]
+position = Vector2(272, 168)
+shape = SubResource("SegmentShape2D_biptr")
+one_way_collision = true
+
+[node name="Sprite2D343" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(320, 88.0001)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D344" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(384, 88.0001)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D345" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(320, 24.0001)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D346" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(384, 24.0001)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D347" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(320, -103.25)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D348" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(384, -103.25)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D349" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(320, -40)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D350" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(384, -39.25)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="CollisionShape2D15" type="CollisionShape2D" parent="interior_tiles_set1"]
+position = Vector2(464, 168)
+shape = SubResource("SegmentShape2D_biptr")
+one_way_collision = true
+
+[node name="Sprite2D351" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(512, 88)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D352" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(576, 88)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D353" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(512, 24)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D354" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(576, 24)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D355" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(512, -103.25)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D357" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(512, -39.2501)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D358" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(576, -39.2501)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="CollisionShape2D16" type="CollisionShape2D" parent="interior_tiles_set1"]
+position = Vector2(720, 168)
+shape = SubResource("SegmentShape2D_biptr")
+one_way_collision = true
+
+[node name="Sprite2D359" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(768, 88)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D360" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(832, 88)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D361" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(768, 24)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D362" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(832, 24)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D363" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(768, -103.25)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D364" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(832, -103.25)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D365" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(768, -39.2501)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D366" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(832, -39.2501)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="CollisionShape2D17" type="CollisionShape2D" parent="interior_tiles_set1"]
+position = Vector2(848, 168)
+shape = SubResource("SegmentShape2D_biptr")
+one_way_collision = true
+
+[node name="Sprite2D367" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(1024, 88)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D368" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(960, 88.0001)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D369" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(1024, -40)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D370" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(960, 24.0001)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D371" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(1024, 24)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D372" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(960, -103.25)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D373" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(1024, -104)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D374" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(960, -39.25)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="CollisionShape2D18" type="CollisionShape2D" parent="interior_tiles_set1"]
+position = Vector2(1040, 168)
+shape = SubResource("SegmentShape2D_biptr")
+one_way_collision = true
+
+[node name="Sprite2D375" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(1088, 88)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D376" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(1152, 88)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D377" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(1088, 24)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D378" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(1152, 24)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D380" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(1152, -103.25)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D381" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(1088, -39.2501)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D382" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(1152, -39.2501)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="CollisionShape2D19" type="CollisionShape2D" parent="interior_tiles_set1"]
+position = Vector2(1168, 168)
+shape = SubResource("SegmentShape2D_biptr")
+one_way_collision = true
+
+[node name="Sprite2D383" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(1216, 88.0001)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D384" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(1280, 88.0001)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D385" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(1216, 24.0001)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D386" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(1280, 24.0001)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D387" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(1216, -103.25)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D388" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(1280, -103.25)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D389" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(1216, -39.25)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D390" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(1280, -39.25)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="CollisionShape2D20" type="CollisionShape2D" parent="interior_tiles_set1"]
+position = Vector2(1168, 168)
+shape = SubResource("SegmentShape2D_biptr")
+one_way_collision = true
+
+[node name="Sprite2D391" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(1216, 88.0001)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D392" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(1280, 88.0001)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D393" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(1216, 24.0001)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D394" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(1280, 24.0001)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D395" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(1216, -103.25)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D396" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(1280, -103.25)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D397" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(1216, -39.25)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D398" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(1280, -39.25)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D148" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(320, -296)
+scale = Vector2(2, 2)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D150" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(448, -295.25)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D151" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(192, -551.25)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D152" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(256, -551.25)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D153" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(320, -551.25)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D154" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(384, -551.25)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D155" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(448, -551.25)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D156" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(192, -615.25)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D157" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(256, -615.25)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D158" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(320, -615.25)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D159" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(384, -615.25)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D160" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(448, -615.25)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D42" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(512, -168)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D43" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(576, -168)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D44" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(640, -168)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D45" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(704, -168)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D46" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(768, -168)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D47" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(512, -232)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D48" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(576, -232)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D49" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(640, -232)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D50" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(704, -232)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D51" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(768, -232)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D52" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(768, -232)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D161" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(512, -679.25)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D162" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(576, -679.25)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D163" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(640, -679.25)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D164" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(704, -679.25)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D165" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(768, -679.25)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D166" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(512, -743.25)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D167" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(576, -743.25)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D168" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(640, -743.25)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D169" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(704, -743.25)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D170" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(768, -743.25)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D171" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(512, -807.25)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D172" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(576, -807.25)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D173" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(640, -807.25)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D174" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(704, -807.25)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D175" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(768, -807.25)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D176" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(512, -487.25)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D177" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(576, -487.25)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D178" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(640, -487.25)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D179" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(704, -487.25)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D180" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(768, -487.25)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D181" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(512, -423.25)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D182" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(576, -423.25)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D183" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(640, -423.25)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D184" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(704, -423.25)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D185" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(768, -423.25)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D186" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(512, -359.25)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D187" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(576, -359.25)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D188" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(640, -359.25)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D189" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(704, -359.25)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D190" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(768, -359.25)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D191" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(512, -295.25)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D192" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(576, -295.25)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D193" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(640, -295.25)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D194" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(704, -295.25)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D195" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(768, -295.25)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D196" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(512, -551.25)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D199" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(704, -551.25)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D200" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(768, -551.25)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D201" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(512, -615.25)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D204" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(704, -615.25)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D205" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(768, -615.25)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D53" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(832, -168)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D54" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(896, -168)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D55" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(960, -168)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D56" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(1024, -168)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D57" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(1088, -168)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D58" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(832, -232)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D59" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(896, -232)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D60" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(960, -232)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D61" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(1024, -232)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D62" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(1088, -232)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D63" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(1088, -232)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D206" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(832, -679.25)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D207" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(896, -679.25)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D208" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(960, -679.25)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D209" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(1024, -679.25)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D210" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(1088, -679.25)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D211" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(832, -743.25)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D212" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(896, -743.25)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D213" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(960, -743.25)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D214" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(1024, -743.25)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D215" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(1088, -743.25)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D216" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(832, -807.25)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D217" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(896, -807.25)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D218" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(960, -807.25)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D219" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(1024, -807.25)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D220" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(1088, -807.25)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D221" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(832, -487.25)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D222" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(896, -487.25)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D223" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(960, -487.25)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D224" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(1024, -487.25)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D225" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(1088, -487.25)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D226" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(832, -423.25)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D227" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(896, -423.25)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D228" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(960, -423.25)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D229" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(1024, -423.25)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D230" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(1088, -423.25)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D231" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(832, -359.25)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D232" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(896, -359.25)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D233" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(960, -359.25)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D234" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(1024, -359.25)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D235" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(1088, -359.25)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D236" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(832, -295.25)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D237" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(896, -295.25)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D238" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(960, -295.25)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D239" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(1024, -295.25)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D240" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(1088, -295.25)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D241" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(832, -551.25)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D242" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(896, -551.25)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D243" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(960, -551.25)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D244" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(1024, -551.25)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D245" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(1088, -551.25)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D246" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(832, -615.25)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D247" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(896, -615.25)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D248" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(960, -615.25)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D249" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(1024, -615.25)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D250" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(1088, -615.25)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D64" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(1152, -168)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D65" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(1216, -168)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D66" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(1280, -168)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D399" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(1344, 88.75)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D400" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(1408, 88.75)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D401" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(1344, -38.5002)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D403" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(1344, 25.4998)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D404" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(1408, 25.4998)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D405" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(1344, 88.75)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D406" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(1408, 88.75)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D407" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(1344, -38.5002)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D409" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(1344, 25.4998)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D410" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(1408, 25.4998)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D411" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(1344, -103.25)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D412" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(1408, -103.25)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D413" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(1472, 88.75)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D414" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(1536, 88.75)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D417" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(1472, 25.4998)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D418" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(1536, 25.4998)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D419" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(1472, 88.75)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D420" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(1536, 88.75)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D423" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(1472, 25.4998)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D424" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(1536, 25.4998)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D427" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(448, 24.0001)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D428" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(448, -103.25)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D429" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(448, -39.25)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D430" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(448, 24.0001)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D431" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(448, -103.25)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D432" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(448, -39.25)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D433" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(704, 24)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D435" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(704, -39.2501)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D436" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(704, 24)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D438" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(704, -39.2501)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D425" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(1472, -103.25)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D426" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(1536, -103.25)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D439" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(1600, 88.75)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D440" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(1600, -38.5002)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D441" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(1600, 25.4998)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D442" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(1600, -103.25)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D443" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(640, 88)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D444" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(640, -40.375)
+scale = Vector2(2, 2.02343)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D445" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(640, 24)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D67" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(1344, -168)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D68" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(1408, -168)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D69" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(1152, -232)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D70" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(1216, -232)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D251" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(1280, -232)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D252" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(1344, -232)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D253" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(1408, -232)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D254" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(1408, -232)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D255" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(1152, -679.25)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D256" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(1216, -679.25)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D257" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(1280, -679.25)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D258" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(1344, -679.25)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D259" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(1408, -679.25)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D260" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(1152, -743.25)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D261" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(1216, -743.25)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D262" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(1280, -743.25)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D263" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(1344, -743.25)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D264" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(1408, -743.25)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D265" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(1152, -807.25)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D266" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(1216, -807.25)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D267" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(1280, -807.25)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D268" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(1344, -807.25)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D269" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(1408, -807.25)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D270" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(1152, -487.25)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D271" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(1216, -487.25)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D272" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(1280, -487.25)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D273" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(1344, -487.25)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D274" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(1408, -487.25)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D275" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(1152, -423.25)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D276" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(1216, -423.25)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D277" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(1280, -423.25)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D278" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(1344, -423.25)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D279" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(1408, -423.25)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="CollisionShape2D23" type="CollisionShape2D" parent="interior_tiles_set1"]
+position = Vector2(664, -648)
+scale = Vector2(2, 2)
+shape = SubResource("SegmentShape2D_263g7")
+
+[node name="CollisionShape2D24" type="CollisionShape2D" parent="interior_tiles_set1"]
+position = Vector2(552, -656)
+scale = Vector2(2, 2)
+shape = SubResource("SegmentShape2D_dj2k3")
+
+[node name="CollisionShape2D22" type="CollisionShape2D" parent="interior_tiles_set1"]
+position = Vector2(576, -552)
+scale = Vector2(2, 2)
+shape = SubResource("SegmentShape2D_2ioqw")
+one_way_collision = true
+
+[node name="Tile19" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(640, -552)
+scale = Vector2(2, 2)
+texture = ExtResource("2_73w4e")
+
+[node name="Tile17" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(576, -552)
+scale = Vector2(2, 2)
+texture = ExtResource("1_di548")
+
+[node name="Tile11" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(640, -616)
+scale = Vector2(2, 2)
+texture = ExtResource("7_kh0u2")
+
+[node name="Tile09" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(576, -616)
+scale = Vector2(2, 2)
+texture = ExtResource("6_4aeqn")
+
+[node name="Sprite2D280" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(1152, -359.25)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D281" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(1216, -359.25)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D282" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(1280, -359.25)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D283" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(1344, -359.25)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D284" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(1408, -359.25)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D285" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(1152, -295.25)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D286" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(1216, -295.25)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D287" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(1280, -295.25)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D288" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(1344, -295.25)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D289" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(1408, -295.25)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D290" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(1152, -551.25)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D291" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(1216, -551.25)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D292" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(1280, -551.25)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D293" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(1344, -551.25)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D294" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(1408, -551.25)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D295" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(1152, -615.25)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D296" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(1216, -615.25)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D297" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(1280, -615.25)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D298" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(1344, -615.25)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D299" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(1408, -615.25)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D300" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(1472, -168)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D301" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(1536, -168)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D302" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(1600, -168)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D303" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(1472, -232)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D304" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(1536, -232)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D306" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(1600, -232)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D307" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(1600, -232)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D308" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(1472, -679.25)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D309" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(1536, -679.25)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D310" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(1600, -679.25)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D311" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(1472, -743.25)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D312" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(1536, -743.25)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D313" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(1600, -743.25)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D314" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(1472, -807.25)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D315" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(1536, -807.25)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D316" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(1600, -807.25)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D317" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(1472, -487.25)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D318" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(1536, -487.25)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D319" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(1600, -487.25)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D320" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(1472, -423.25)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D321" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(1536, -423.25)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D322" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(1600, -423.25)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D323" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(1472, -359.25)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D324" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(1536, -359.25)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D325" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(1600, -359.25)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D326" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(1472, -295.25)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D327" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(1536, -295.25)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D328" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(1600, -295.25)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D329" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(1472, -551.25)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D330" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(1536, -551.25)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D331" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(1600, -551.25)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D332" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(1472, -615.25)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D333" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(1536, -615.25)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="Sprite2D334" type="Sprite2D" parent="interior_tiles_set1"]
+position = Vector2(1600, -615.25)
+scale = Vector2(2, 2.04687)
+texture = ExtResource("10_4jmmu")
+
+[node name="CollisionShape2D21" type="CollisionShape2D" parent="interior_tiles_set1"]
+position = Vector2(1384, -16)
+shape = SubResource("SegmentShape2D_81ft1")
+one_way_collision = true
+
+[node name="interior_tiles_set2" type="StaticBody2D" parent="."]
+position = Vector2(704, 1160)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="interior_tiles_set2"]
+position = Vector2(-160, -104)
+shape = SubResource("RectangleShape2D_tl5au")
+
+[node name="Sprite2D" type="Sprite2D" parent="interior_tiles_set2/CollisionShape2D"]
+position = Vector2(-7.62939e-06, 1.52588e-05)
+scale = Vector2(2, 2)
+texture = ExtResource("9_s82gu")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="interior_tiles_set2"]
+position = Vector2(-32, -136)
+shape = SubResource("RectangleShape2D_wp35a")
+
+[node name="Sprite2D" type="Sprite2D" parent="interior_tiles_set2/CollisionShape2D2"]
+position = Vector2(0, -32)
+scale = Vector2(2, 2)
+texture = ExtResource("10_48asw")
+
+[node name="Sprite2D2" type="Sprite2D" parent="interior_tiles_set2/CollisionShape2D2"]
+position = Vector2(0, 32)
+scale = Vector2(2, 2)
+texture = ExtResource("8_qx6rv")
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="interior_tiles_set2"]
+position = Vector2(8, -88)
+shape = SubResource("SegmentShape2D_2yjlk")
+
+[node name="Sprite2D" type="Sprite2D" parent="interior_tiles_set2/CollisionShape2D3"]
+position = Vector2(24, -16)
+scale = Vector2(2, 2)
+texture = ExtResource("11_jfg8e")
+
+[node name="Sprite2D" type="Sprite2D" parent="interior_tiles_set2/CollisionShape2D3/Sprite2D"]
+texture = ExtResource("15_0jk22")
+
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="interior_tiles_set2"]
+position = Vector2(224, -136)
+shape = SubResource("RectangleShape2D_wp35a")
+
+[node name="Sprite2D2" type="Sprite2D" parent="interior_tiles_set2/CollisionShape2D4"]
+position = Vector2(0, -32)
+scale = Vector2(2, 2)
+texture = ExtResource("10_48asw")
+
+[node name="Sprite2D" type="Sprite2D" parent="interior_tiles_set2/CollisionShape2D4"]
+position = Vector2(0, 32)
+scale = Vector2(2, 2)
+texture = ExtResource("8_qx6rv")
+
+[node name="CollisionShape2D7" type="CollisionShape2D" parent="interior_tiles_set2"]
+position = Vector2(376, -344)
+shape = SubResource("SegmentShape2D_57128")
+one_way_collision = true
+
+[node name="Sprite2D154" type="Sprite2D" parent="interior_tiles_set2/CollisionShape2D7"]
+position = Vector2(40, -16)
+scale = Vector2(2, 2)
+texture = ExtResource("5_vhfvh")
+
+[node name="CollisionShape2D8" type="CollisionShape2D" parent="interior_tiles_set2"]
+position = Vector2(376, -280)
+shape = SubResource("SegmentShape2D_57128")
+one_way_collision = true
+
+[node name="Sprite2D154" type="Sprite2D" parent="interior_tiles_set2/CollisionShape2D8"]
+position = Vector2(40, -16)
+scale = Vector2(2, 2)
+texture = ExtResource("5_vhfvh")
+
+[node name="CollisionShape2D9" type="CollisionShape2D" parent="interior_tiles_set2"]
+position = Vector2(376, -152)
+shape = SubResource("SegmentShape2D_57128")
+one_way_collision = true
+
+[node name="Sprite2D154" type="Sprite2D" parent="interior_tiles_set2/CollisionShape2D9"]
+position = Vector2(40, -16)
+scale = Vector2(2, 2)
+texture = ExtResource("5_vhfvh")
+
+[node name="CollisionShape2D10" type="CollisionShape2D" parent="interior_tiles_set2"]
+position = Vector2(376, -216)
+shape = SubResource("SegmentShape2D_57128")
+one_way_collision = true
+
+[node name="Sprite2D155" type="Sprite2D" parent="interior_tiles_set2/CollisionShape2D10"]
+position = Vector2(40, -16)
+scale = Vector2(2, 2)
+texture = ExtResource("5_vhfvh")
+
+[node name="Tile17" type="Sprite2D" parent="interior_tiles_set2"]
+position = Vector2(-672, -488)
+scale = Vector2(2, 2)
+texture = ExtResource("1_di548")
+
+[node name="Tile18" type="Sprite2D" parent="interior_tiles_set2"]
+position = Vector2(-608, -488)
+scale = Vector2(2, 2)
+texture = ExtResource("5_vhfvh")
+
+[node name="Tile19" type="Sprite2D" parent="interior_tiles_set2"]
+position = Vector2(-544, -488)
+scale = Vector2(2, 2)
+texture = ExtResource("5_vhfvh")
+
+[node name="Tile20" type="Sprite2D" parent="interior_tiles_set2"]
+position = Vector2(-480, -488)
+scale = Vector2(2, 2)
+texture = ExtResource("5_vhfvh")
+
+[node name="Tile21" type="Sprite2D" parent="interior_tiles_set2"]
+position = Vector2(-224, -488)
+scale = Vector2(2, 2)
+texture = ExtResource("5_vhfvh")
+
+[node name="Tile22" type="Sprite2D" parent="interior_tiles_set2"]
+position = Vector2(-32, -424)
+scale = Vector2(2, 2)
+texture = ExtResource("5_vhfvh")
+
+[node name="Tile23" type="Sprite2D" parent="interior_tiles_set2"]
+position = Vector2(-160, -488)
+scale = Vector2(2, 2)
+texture = ExtResource("5_vhfvh")
+
+[node name="Sprite2D154" type="Sprite2D" parent="interior_tiles_set2"]
+position = Vector2(224, -360)
+scale = Vector2(2, 2)
+texture = ExtResource("5_vhfvh")
+
+[node name="Tile24" type="Sprite2D" parent="interior_tiles_set2"]
+position = Vector2(160, -360)
+scale = Vector2(2, 2)
+texture = ExtResource("5_vhfvh")
+
+[node name="Tile25" type="Sprite2D" parent="interior_tiles_set2"]
+position = Vector2(96, -360)
+scale = Vector2(2, 2)
+texture = ExtResource("5_vhfvh")
+
+[node name="Sprite2D155" type="Sprite2D" parent="interior_tiles_set2"]
+position = Vector2(480, -424)
+scale = Vector2(2, 2)
+texture = ExtResource("5_vhfvh")
+
+[node name="Tile26" type="Sprite2D" parent="interior_tiles_set2"]
+position = Vector2(544, -424)
+scale = Vector2(2, 2)
+texture = ExtResource("5_vhfvh")
+
+[node name="Tile27" type="Sprite2D" parent="interior_tiles_set2"]
+position = Vector2(608, -488)
+scale = Vector2(2, 2)
+texture = ExtResource("5_vhfvh")
+
+[node name="Tile28" type="Sprite2D" parent="interior_tiles_set2"]
+position = Vector2(608, -360)
+scale = Vector2(2, 2)
+texture = ExtResource("5_vhfvh")
+
+[node name="Tile29" type="Sprite2D" parent="interior_tiles_set2"]
+position = Vector2(672, -360)
+scale = Vector2(2, 2)
+texture = ExtResource("5_vhfvh")
+
+[node name="Tile30" type="Sprite2D" parent="interior_tiles_set2"]
+position = Vector2(736, -296)
+scale = Vector2(2, 2)
+texture = ExtResource("5_vhfvh")
+
+[node name="Tile31" type="Sprite2D" parent="interior_tiles_set2"]
+position = Vector2(672, -552)
+scale = Vector2(2, 2)
+texture = ExtResource("5_vhfvh")
+
+[node name="Tile32" type="Sprite2D" parent="interior_tiles_set2"]
+position = Vector2(800, -552)
+scale = Vector2(2, 2)
+texture = ExtResource("5_vhfvh")
+
+[node name="Tile33" type="Sprite2D" parent="interior_tiles_set2"]
+position = Vector2(864, -616)
+scale = Vector2(2, 2)
+texture = ExtResource("5_vhfvh")
+
+[node name="Tile34" type="Sprite2D" parent="interior_tiles_set2"]
+position = Vector2(928, -616)
+scale = Vector2(2, 2)
+texture = ExtResource("5_vhfvh")
+
+[node name="Tile35" type="Sprite2D" parent="interior_tiles_set2"]
+position = Vector2(992, -296)
+scale = Vector2(2, 2)
+texture = ExtResource("5_vhfvh")
+
+[node name="Tile36" type="Sprite2D" parent="interior_tiles_set2"]
+position = Vector2(1056, -296)
+scale = Vector2(2, 2)
+texture = ExtResource("5_vhfvh")
+
+[node name="Tile37" type="Sprite2D" parent="interior_tiles_set2"]
+position = Vector2(928, -296)
+scale = Vector2(2, 2)
+texture = ExtResource("5_vhfvh")
+
+[node name="Tile38" type="Sprite2D" parent="interior_tiles_set2"]
+position = Vector2(-96, -552)
+scale = Vector2(2, 2)
+texture = ExtResource("5_vhfvh")
+
+[node name="Tile39" type="Sprite2D" parent="interior_tiles_set2"]
+position = Vector2(-32, -616)
+scale = Vector2(2, 2)
+texture = ExtResource("5_vhfvh")
+
+[node name="Tile40" type="Sprite2D" parent="interior_tiles_set2"]
+position = Vector2(-160, -680)
+scale = Vector2(2, 2)
+texture = ExtResource("5_vhfvh")
+
+[node name="Tile41" type="Sprite2D" parent="interior_tiles_set2"]
+position = Vector2(-224, -744)
+scale = Vector2(2, 2)
+texture = ExtResource("5_vhfvh")
+
+[node name="Tile42" type="Sprite2D" parent="interior_tiles_set2"]
+position = Vector2(-288, -808)
+scale = Vector2(2, 2)
+texture = ExtResource("5_vhfvh")
+
+[node name="Tile43" type="Sprite2D" parent="interior_tiles_set2"]
+position = Vector2(-352, -808)
+scale = Vector2(2, 2)
+texture = ExtResource("5_vhfvh")
+
+[node name="Tile44" type="Sprite2D" parent="interior_tiles_set2"]
+position = Vector2(-408, -808)
+scale = Vector2(2, 2)
+texture = ExtResource("5_vhfvh")
+
+[node name="Tile45" type="Sprite2D" parent="interior_tiles_set2"]
+position = Vector2(-160, -808)
+scale = Vector2(2, 2)
+texture = ExtResource("5_vhfvh")
+
+[node name="Tile46" type="Sprite2D" parent="interior_tiles_set2"]
+position = Vector2(-96, -872)
+scale = Vector2(2, 2)
+texture = ExtResource("5_vhfvh")
+
+[node name="Tile47" type="Sprite2D" parent="interior_tiles_set2"]
+position = Vector2(-32, -872)
+scale = Vector2(2, 2)
+texture = ExtResource("5_vhfvh")
+
+[node name="Tile48" type="Sprite2D" parent="interior_tiles_set2"]
+position = Vector2(32, -936)
+scale = Vector2(2, 2)
+texture = ExtResource("5_vhfvh")
+
+[node name="Tile49" type="Sprite2D" parent="interior_tiles_set2"]
+position = Vector2(96, -936)
+scale = Vector2(2, 2)
+texture = ExtResource("5_vhfvh")
+
+[node name="Tile50" type="Sprite2D" parent="interior_tiles_set2"]
+position = Vector2(160, -936)
+scale = Vector2(2, 2)
+texture = ExtResource("5_vhfvh")
+
+[node name="Tile51" type="Sprite2D" parent="interior_tiles_set2"]
+position = Vector2(160, -616)
+scale = Vector2(2, 2)
+texture = ExtResource("5_vhfvh")
+
+[node name="CollisionShape2D12" type="CollisionShape2D" parent="interior_tiles_set2"]
+position = Vector2(-136, -536)
+shape = SubResource("SegmentShape2D_57128")
+one_way_collision = true
+
+[node name="Tile52" type="Sprite2D" parent="interior_tiles_set2"]
+position = Vector2(352, -616)
+scale = Vector2(2, 2)
+texture = ExtResource("5_vhfvh")
+
+[node name="CollisionShape2D11" type="CollisionShape2D" parent="interior_tiles_set2"]
+position = Vector2(-72, -408)
+shape = SubResource("SegmentShape2D_57128")
+one_way_collision = true
+
+[node name="Tile53" type="Sprite2D" parent="interior_tiles_set2"]
+position = Vector2(416, -616)
+scale = Vector2(2, 2)
+texture = ExtResource("5_vhfvh")
+
+[node name="CollisionShape2D13" type="CollisionShape2D" parent="interior_tiles_set2"]
+position = Vector2(120, -600)
+shape = SubResource("SegmentShape2D_57128")
+one_way_collision = true
+
+[node name="CollisionShape2D14" type="CollisionShape2D" parent="interior_tiles_set2"]
+position = Vector2(568, -472)
+shape = SubResource("SegmentShape2D_57128")
+one_way_collision = true
+
+[node name="CollisionShape2D15" type="CollisionShape2D" parent="interior_tiles_set2"]
+position = Vector2(696, -280)
+shape = SubResource("SegmentShape2D_57128")
+one_way_collision = true
+
+[node name="CollisionShape2D16" type="CollisionShape2D" parent="interior_tiles_set2"]
+position = Vector2(632, -536)
+shape = SubResource("SegmentShape2D_57128")
+one_way_collision = true
+
+[node name="CollisionShape2D17" type="CollisionShape2D" parent="interior_tiles_set2"]
+position = Vector2(760, -536)
+shape = SubResource("SegmentShape2D_57128")
+one_way_collision = true
+
+[node name="CollisionShape2D5" type="CollisionShape2D" parent="interior_tiles_set2"]
+position = Vector2(-448, -480)
+shape = SubResource("SegmentShape2D_wxfh7")
+one_way_collision = true
+
+[node name="CollisionShape2D6" type="CollisionShape2D" parent="interior_tiles_set2"]
+position = Vector2(-440, -784)
+shape = SubResource("SegmentShape2D_81ft1")
+one_way_collision = true
+
+[node name="CollisionShape2D18" type="CollisionShape2D" parent="interior_tiles_set2"]
+position = Vector2(8, -912)
+shape = SubResource("SegmentShape2D_81ft1")
+one_way_collision = true
+
+[node name="CollisionShape2D19" type="CollisionShape2D" parent="interior_tiles_set2"]
+position = Vector2(72, -336)
+shape = SubResource("SegmentShape2D_81ft1")
+one_way_collision = true
+
+[node name="CollisionShape2D20" type="CollisionShape2D" parent="interior_tiles_set2"]
+position = Vector2(-264, -728)
+shape = SubResource("SegmentShape2D_57128")
+one_way_collision = true
+
+[node name="CollisionShape2D21" type="CollisionShape2D" parent="interior_tiles_set2"]
+position = Vector2(-200, -792)
+shape = SubResource("SegmentShape2D_57128")
+one_way_collision = true
+
+[node name="CollisionShape2D22" type="CollisionShape2D" parent="interior_tiles_set2"]
+position = Vector2(-200, -664)
+shape = SubResource("SegmentShape2D_57128")
+one_way_collision = true
+
+[node name="CollisionShape2D23" type="CollisionShape2D" parent="interior_tiles_set2"]
+position = Vector2(-72, -600)
+shape = SubResource("SegmentShape2D_57128")
+one_way_collision = true
+
+[node name="CollisionShape2D24" type="CollisionShape2D" parent="interior_tiles_set2"]
+position = Vector2(704, -336)
+shape = SubResource("SegmentShape2D_f7atw")
+one_way_collision = true
+
+[node name="CollisionShape2D25" type="CollisionShape2D" parent="interior_tiles_set2"]
+position = Vector2(448, -592)
+shape = SubResource("SegmentShape2D_f7atw")
+one_way_collision = true
+
+[node name="CollisionShape2D26" type="CollisionShape2D" parent="interior_tiles_set2"]
+position = Vector2(0, -848)
+shape = SubResource("SegmentShape2D_f7atw")
+one_way_collision = true
+
+[node name="CollisionShape2D27" type="CollisionShape2D" parent="interior_tiles_set2"]
+position = Vector2(576, -400)
+shape = SubResource("SegmentShape2D_f7atw")
+one_way_collision = true
+
+[node name="CollisionShape2D28" type="CollisionShape2D" parent="interior_tiles_set2"]
+position = Vector2(960, -592)
+shape = SubResource("SegmentShape2D_f7atw")
+one_way_collision = true
+
+[node name="CollisionShape2D29" type="CollisionShape2D" parent="interior_tiles_set2"]
+position = Vector2(-128, -464)
+shape = SubResource("SegmentShape2D_f7atw")
+one_way_collision = true
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(288, 1056)
+zoom = Vector2(2.705, 2.705)
+limit_left = 0
+limit_top = 0
+limit_right = 1920
+limit_bottom = 1088
+limit_smoothed = true
+position_smoothing_speed = 100.0
+editor_draw_limits = true
+
+[node name="roof" type="StaticBody2D" parent="."]
+position = Vector2(888, -24)
+
+[node name="roof_collision" type="CollisionShape2D" parent="roof"]
+position = Vector2(72, 24)
+shape = SubResource("RectangleShape2D_p5ru3")
+
+[node name="r1" type="Sprite2D" parent="roof"]
+position = Vector2(-792, 56)
+scale = Vector2(2, 2)
+texture = ExtResource("13_ean26")
+
+[node name="r2" type="Sprite2D" parent="roof"]
+position = Vector2(-728, 56)
+scale = Vector2(2, 2)
+texture = ExtResource("13_ean26")
+
+[node name="r3" type="Sprite2D" parent="roof"]
+position = Vector2(-664, 56)
+scale = Vector2(2, 2)
+texture = ExtResource("13_ean26")
+
+[node name="r4" type="Sprite2D" parent="roof"]
+position = Vector2(-600, 56)
+scale = Vector2(2, 2)
+texture = ExtResource("13_ean26")
+
+[node name="r5" type="Sprite2D" parent="roof"]
+position = Vector2(-536, 56)
+scale = Vector2(2, 2)
+texture = ExtResource("13_ean26")
+
+[node name="r6" type="Sprite2D" parent="roof"]
+position = Vector2(-474, 56)
+scale = Vector2(2.125, 2)
+texture = ExtResource("13_ean26")
+
+[node name="r7" type="Sprite2D" parent="roof"]
+position = Vector2(-408.5, 56)
+scale = Vector2(2.03125, 2)
+texture = ExtResource("13_ean26")
+
+[node name="r8" type="Sprite2D" parent="roof"]
+position = Vector2(-344.5, 56)
+scale = Vector2(2.03125, 2)
+texture = ExtResource("13_ean26")
+
+[node name="r9" type="Sprite2D" parent="roof"]
+position = Vector2(-280.5, 56)
+scale = Vector2(2.03125, 2)
+texture = ExtResource("13_ean26")
+
+[node name="r10" type="Sprite2D" parent="roof"]
+position = Vector2(-216, 56)
+scale = Vector2(2, 2)
+texture = ExtResource("13_ean26")
+
+[node name="r11" type="Sprite2D" parent="roof"]
+position = Vector2(-152, 56)
+scale = Vector2(2, 2)
+texture = ExtResource("13_ean26")
+
+[node name="r12" type="Sprite2D" parent="roof"]
+position = Vector2(-88, 56)
+scale = Vector2(2, 2)
+texture = ExtResource("13_ean26")
+
+[node name="r13" type="Sprite2D" parent="roof"]
+position = Vector2(-24, 56)
+scale = Vector2(2, 2)
+texture = ExtResource("13_ean26")
+
+[node name="r14" type="Sprite2D" parent="roof"]
+position = Vector2(38, 56)
+scale = Vector2(2.125, 2)
+texture = ExtResource("13_ean26")
+
+[node name="r15" type="Sprite2D" parent="roof"]
+position = Vector2(103.5, 56)
+scale = Vector2(2.03125, 2)
+texture = ExtResource("13_ean26")
+
+[node name="r16" type="Sprite2D" parent="roof"]
+position = Vector2(167.5, 56)
+scale = Vector2(2.03125, 2)
+texture = ExtResource("13_ean26")
+
+[node name="r17" type="Sprite2D" parent="roof"]
+position = Vector2(231.5, 56)
+scale = Vector2(2.03125, 2)
+texture = ExtResource("13_ean26")
+
+[node name="r18" type="Sprite2D" parent="roof"]
+position = Vector2(296, 56)
+scale = Vector2(2.03125, 2)
+texture = ExtResource("13_ean26")
+
+[node name="r19" type="Sprite2D" parent="roof"]
+position = Vector2(360, 56)
+scale = Vector2(2, 2)
+texture = ExtResource("13_ean26")
+
+[node name="r20" type="Sprite2D" parent="roof"]
+position = Vector2(424, 56)
+scale = Vector2(2, 2)
+texture = ExtResource("13_ean26")
+
+[node name="r21" type="Sprite2D" parent="roof"]
+position = Vector2(488, 56)
+scale = Vector2(2, 2)
+texture = ExtResource("13_ean26")
+
+[node name="r22" type="Sprite2D" parent="roof"]
+position = Vector2(552, 56)
+scale = Vector2(2, 2)
+texture = ExtResource("13_ean26")
+
+[node name="r23" type="Sprite2D" parent="roof"]
+position = Vector2(616, 56)
+scale = Vector2(2.125, 2)
+texture = ExtResource("13_ean26")
+
+[node name="r24" type="Sprite2D" parent="roof"]
+position = Vector2(680, 56)
+scale = Vector2(2.03125, 2)
+texture = ExtResource("13_ean26")
+
+[node name="r25" type="Sprite2D" parent="roof"]
+position = Vector2(744, 56)
+scale = Vector2(2.03125, 2)
+texture = ExtResource("13_ean26")
+
+[node name="r26" type="Sprite2D" parent="roof"]
+position = Vector2(808, 56)
+scale = Vector2(2.03125, 2)
+texture = ExtResource("13_ean26")
+
+[node name="r27" type="Sprite2D" parent="roof"]
+position = Vector2(872, 56)
+scale = Vector2(2.03125, 2)
+texture = ExtResource("13_ean26")
+
+[node name="r28" type="Sprite2D" parent="roof"]
+position = Vector2(936, 56)
+scale = Vector2(2.03125, 2)
+texture = ExtResource("13_ean26")
+
+[node name="puzzle_nodes" type="Sprite2D" parent="."]
+position = Vector2(920, 296)
+
+[node name="puzzle_1" type="Sprite2D" parent="puzzle_nodes"]
+position = Vector2(-864, 731)
+scale = Vector2(2, 2.9375)
+texture = ExtResource("14_qbfje")
+script = SubResource("GDScript_86275")
+
+[node name="Interactable1" type="Area2D" parent="puzzle_nodes/puzzle_1" groups=["questions"]]
+collision_layer = 2
+collision_mask = 2
+script = ExtResource("17_m2obw")
+interact_label = "Press [E] to interact"
+question_uuid = "f9b26ef1-c362-4059-91b6-93fbcc5e1d28"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="puzzle_nodes/puzzle_1/Interactable1"]
+position = Vector2(0, 0.340424)
+shape = SubResource("RectangleShape2D_wx086")
+
+[node name="puzzle_2" type="Sprite2D" parent="puzzle_nodes"]
+position = Vector2(-856, 600)
+scale = Vector2(2, 2)
+texture = ExtResource("16_tdigo")
+
+[node name="Interactable2" type="Area2D" parent="puzzle_nodes/puzzle_2" groups=["questions"]]
+position = Vector2(-4, 65.5)
+scale = Vector2(1, 1.46875)
+collision_layer = 2
+collision_mask = 0
+script = ExtResource("17_m2obw")
+interact_label = "Press [E] to interact"
+question_uuid = "b0a2f4ed-8d43-4ca6-b3ca-3bf7abd302e7"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="puzzle_nodes/puzzle_2/Interactable2"]
+position = Vector2(4.00001, -44.484)
+shape = SubResource("RectangleShape2D_rg2uj")
+
+[node name="puzzle_3" type="Sprite2D" parent="puzzle_nodes"]
+position = Vector2(-632, 624)
+texture = ExtResource("17_6cboy")
+
+[node name="Interactable3" type="Area2D" parent="puzzle_nodes/puzzle_3" groups=["questions"]]
+position = Vector2(-24, 8)
+scale = Vector2(2, 2.9375)
+collision_layer = 2
+collision_mask = 0
+script = ExtResource("17_m2obw")
+interact_label = "Press [E] to interact"
+interact_type = "type3"
+question_uuid = "e2b1c176-ce18-4692-b2f2-a1550a847cf0"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="puzzle_nodes/puzzle_3/Interactable3"]
+position = Vector2(12, -2.72342)
+shape = SubResource("RectangleShape2D_4t312")
+
+[node name="puzzle_4" type="Sprite2D" parent="puzzle_nodes"]
+position = Vector2(72, 744)
+scale = Vector2(1.96875, 1.5)
+texture = ExtResource("17_6cboy")
+
+[node name="Interactable4" type="Area2D" parent="puzzle_nodes/puzzle_4" groups=["questions"]]
+position = Vector2(-475.429, -8.66669)
+scale = Vector2(1.01587, 1.95833)
+collision_layer = 2
+collision_mask = 0
+script = ExtResource("17_m2obw")
+interact_label = "Press [E] to interact"
+interact_type = "type4"
+question_uuid = "2e80e2e5-2169-4fb3-967e-d4c03cc919f1"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="puzzle_nodes/puzzle_4/Interactable4"]
+position = Vector2(468, 4.42554)
+shape = SubResource("RectangleShape2D_1mki6")
+
+[node name="puzzle_5" type="Sprite2D" parent="puzzle_nodes"]
+position = Vector2(776, 536)
+scale = Vector2(2, 2.9375)
+texture = ExtResource("14_qbfje")
+script = SubResource("GDScript_86275")
+
+[node name="Interactable5" type="Area2D" parent="puzzle_nodes/puzzle_5" groups=["questions"]]
+collision_layer = 2
+collision_mask = 2
+script = ExtResource("17_m2obw")
+interact_label = "Press [E] to interact"
+question_uuid = "d390378d-1025-443a-b73b-25f59213b4eb"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="puzzle_nodes/puzzle_5/Interactable5"]
+position = Vector2(0, 0.340424)
+shape = SubResource("RectangleShape2D_wx086")
+
+[node name="puzzle_6" type="Sprite2D" parent="puzzle_nodes"]
+position = Vector2(-568, 32)
+scale = Vector2(2, 2)
+texture = ExtResource("16_tdigo")
+
+[node name="Interactable6" type="Area2D" parent="puzzle_nodes/puzzle_6" groups=["questions"]]
+position = Vector2(0, 20)
+scale = Vector2(1, 1.46875)
+collision_layer = 2
+collision_mask = 0
+monitoring = false
+script = ExtResource("17_m2obw")
+interact_label = "Press [E] to interact"
+question_uuid = "4ad6b333-0ddd-4cb9-a2a0-6308b55fb637"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="puzzle_nodes/puzzle_6/Interactable6"]
+position = Vector2(0, -13.617)
+shape = SubResource("RectangleShape2D_rg2uj")
+
+[node name="puzzle_7" type="Sprite2D" parent="puzzle_nodes"]
+position = Vector2(-88, 24.0001)
+scale = Vector2(2.48437, 2.5)
+texture = ExtResource("17_6cboy")
+
+[node name="Interactable7" type="Area2D" parent="puzzle_nodes/puzzle_7" groups=["questions"]]
+position = Vector2(-475.429, -8.66669)
+scale = Vector2(1.01587, 1.95833)
+collision_layer = 2
+collision_mask = 0
+script = ExtResource("17_m2obw")
+interact_label = "Press [E] to interact"
+question_uuid = "d32f683b-483a-4fff-b96b-5dc98fda2875"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="puzzle_nodes/puzzle_7/Interactable7"]
+position = Vector2(468.002, 6.05959)
+shape = SubResource("RectangleShape2D_1mki6")
+
+[node name="puzzle_8" type="Sprite2D" parent="puzzle_nodes"]
+position = Vector2(-824, 344)
+scale = Vector2(2, 2.9375)
+texture = ExtResource("14_qbfje")
+script = SubResource("GDScript_86275")
+
+[node name="Interactable8" type="Area2D" parent="puzzle_nodes/puzzle_8" groups=["questions"]]
+collision_layer = 2
+collision_mask = 2
+script = ExtResource("17_m2obw")
+interact_label = "Press [E] to interact"
+interact_type = "type6"
+question_uuid = "e3935016-f989-46af-8cd1-bebcd29d864a"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="puzzle_nodes/puzzle_8/Interactable8"]
+position = Vector2(0, 0.340424)
+shape = SubResource("RectangleShape2D_wx086")
+
+[node name="puzzle_9" type="Sprite2D" parent="puzzle_nodes"]
+position = Vector2(-56.0001, 472)
+scale = Vector2(2, 2.9375)
+texture = ExtResource("14_qbfje")
+script = SubResource("GDScript_86275")
+
+[node name="Interactable9" type="Area2D" parent="puzzle_nodes/puzzle_9" groups=["questions"]]
+collision_layer = 2
+collision_mask = 2
+script = ExtResource("17_m2obw")
+interact_label = "Press [E] to interact"
+question_uuid = "b7ba3764-e0f7-41ce-93f0-c1ba8db461e5"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="puzzle_nodes/puzzle_9/Interactable9"]
+position = Vector2(0, 0.340424)
+shape = SubResource("RectangleShape2D_wx086")
+
+[node name="puzzle_10" type="Sprite2D" parent="puzzle_nodes"]
+position = Vector2(680, 216)
+scale = Vector2(2, 2.9375)
+texture = ExtResource("14_qbfje")
+script = SubResource("GDScript_86275")
+
+[node name="Interactable10" type="Area2D" parent="puzzle_nodes/puzzle_10" groups=["questions"]]
+collision_layer = 2
+collision_mask = 2
+script = ExtResource("17_m2obw")
+interact_label = "Press [E] to interact"
+question_uuid = "c8859657-41fc-438e-9de7-d02245351b0c"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="puzzle_nodes/puzzle_10/Interactable10"]
+position = Vector2(0, 0.340424)
+shape = SubResource("RectangleShape2D_wx086")
+
+[node name="exit_node" type="Sprite2D" parent="."]
+position = Vector2(920, 296)
+
+[node name="exit" type="Sprite2D" parent="exit_node"]
+position = Vector2(920, 728)
+scale = Vector2(2, 2.9375)
+texture = ExtResource("22_3yg42")
+script = SubResource("GDScript_86275")
+
+[node name="Interactable" type="Area2D" parent="exit_node/exit"]
+collision_layer = 2
+collision_mask = 0
+script = ExtResource("17_m2obw")
+interact_label = "Press [E] to interact"
+interact_type = "typeE"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="exit_node/exit/Interactable"]
+position = Vector2(-6.10352e-05, -3.05176e-05)
+shape = SubResource("RectangleShape2D_h5dq5")
+
+[node name="Player" type="CharacterBody2D" parent="."]
+position = Vector2(280, 1128)
+script = ExtResource("2_q0hiu")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Player"]
+position = Vector2(8, -80)
+shape = SubResource("RectangleShape2D_u6qvc")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Player/CollisionShape2D"]
+y_sort_enabled = true
+position = Vector2(-1.52588e-05, 0)
+scale = Vector2(2, 2.33333)
+sprite_frames = SubResource("SpriteFrames_vwpf1")
+animation = &"idle"
+autoplay = "idle"
+frame_progress = 0.64208
+
+[node name="RemoteTransform2D" type="RemoteTransform2D" parent="Player"]
+position = Vector2(8, -72)
+remote_path = NodePath("../../Camera2D")
+
+[node name="InteractionComponents" type="Node2D" parent="Player"]
+z_index = 1
+
+[node name="interactionArea" type="Area2D" parent="Player/InteractionComponents"]
+position = Vector2(8, -80)
+collision_layer = 0
+collision_mask = 2
+monitorable = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Player/InteractionComponents/interactionArea"]
+shape = SubResource("CircleShape2D_ybjv3")
+
+[node name="interact_label" type="Label" parent="Player/InteractionComponents"]
+offset_left = -86.0
+offset_top = -123.0
+offset_right = 102.0
+offset_bottom = -97.0
+theme_override_font_sizes/font_size = 18
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[connection signal="body_entered" from="puzzle_nodes/puzzle_1/Interactable1" to="." method="is_inside_collision_shape"]
+[connection signal="body_entered" from="puzzle_nodes/puzzle_2/Interactable2" to="." method="_on_p1_interactable_body_entered"]
+[connection signal="body_entered" from="puzzle_nodes/puzzle_3/Interactable3" to="." method="_on_p1_interactable_body_entered"]
+[connection signal="body_entered" from="puzzle_nodes/puzzle_4/Interactable4" to="." method="_on_p1_interactable_body_entered"]
+[connection signal="body_entered" from="puzzle_nodes/puzzle_5/Interactable5" to="." method="is_inside_collision_shape"]
+[connection signal="body_entered" from="puzzle_nodes/puzzle_6/Interactable6" to="." method="_on_p1_interactable_body_entered"]
+[connection signal="body_entered" from="puzzle_nodes/puzzle_7/Interactable7" to="." method="_on_p1_interactable_body_entered"]
+[connection signal="body_entered" from="puzzle_nodes/puzzle_8/Interactable8" to="." method="is_inside_collision_shape"]
+[connection signal="body_entered" from="puzzle_nodes/puzzle_9/Interactable9" to="." method="is_inside_collision_shape"]
+[connection signal="body_entered" from="puzzle_nodes/puzzle_10/Interactable10" to="." method="is_inside_collision_shape"]
+[connection signal="body_entered" from="exit_node/exit/Interactable" to="." method="_on_p1_interactable_body_entered"]
+[connection signal="area_entered" from="Player/InteractionComponents/interactionArea" to="Player" method="_on_interaction_area_area_entered"]
+[connection signal="area_exited" from="Player/InteractionComponents/interactionArea" to="Player" method="_on_interaction_area_area_exited"]

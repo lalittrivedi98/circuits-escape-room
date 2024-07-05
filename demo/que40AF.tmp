@@ -1,0 +1,58 @@
+[gd_scene load_steps=4 format=3 uid="uid://enlvgukxbyhe"]
+
+[ext_resource type="Texture2D" uid="uid://dflojhmthj1ps" path="res://circback.PNG" id="1_ag2dn"]
+[ext_resource type="Script" path="res://question3.gd" id="1_w224a"]
+[ext_resource type="Texture2D" uid="uid://gosbvvfuv68t" path="res://circuit.PNG" id="2_ipd08"]
+
+[node name="question3" type="Node2D"]
+script = ExtResource("1_w224a")
+
+[node name="backgroundColor" type="ColorRect" parent="."]
+offset_right = 1152.0
+offset_bottom = 648.0
+color = Color(0, 0, 0, 1)
+
+[node name="Circback" type="Sprite2D" parent="backgroundColor"]
+position = Vector2(576, 324)
+scale = Vector2(0.622703, 0.715232)
+texture = ExtResource("1_ag2dn")
+
+[node name="circuit" type="TextureRect" parent="."]
+offset_right = 40.0
+offset_bottom = 40.0
+scale = Vector2(28.7949, 16.1978)
+
+[node name="image" type="Sprite2D" parent="circuit"]
+position = Vector2(19.9167, 19.605)
+scale = Vector2(0.0784006, 0.151853)
+texture = ExtResource("2_ipd08")
+
+[node name="Submit" type="Button" parent="."]
+offset_left = 578.0
+offset_top = 568.0
+offset_right = 736.0
+offset_bottom = 631.0
+scale = Vector2(1.04875, 0.919962)
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/icon_normal_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 40
+text = "Submit"
+
+[node name="questionText" type="TextEdit" parent="."]
+offset_left = 87.0
+offset_top = 22.0
+offset_right = 1060.0
+offset_bottom = 71.0
+theme_override_font_sizes/font_size = 25
+text = "Question #3: How many branches are in the circuit"
+
+[node name="LineEdit" type="LineEdit" parent="."]
+offset_left = 406.0
+offset_top = 568.0
+offset_right = 564.0
+offset_bottom = 626.0
+placeholder_text = "Enter a number"
+alignment = 1
+
+[connection signal="pressed" from="Submit" to="." method="_on_button_pressed"]
+[connection signal="text_submitted" from="LineEdit" to="." method="_on_line_edit_text_submitted"]

@@ -1,0 +1,82 @@
+image: barichello/godot-ci
+
+# NOTE: the `cd` command in each build stage is not necessary if your
+# project.godot is at the repo root
+
+# Cache imported assets between runs
+cache:
+  key: import-assets
+  paths:
+    - .godot/imported/
+
+stages:
+  - import-assets
+  - export
+  - deploy
+
+variables:
+  EXPORT_NAME: demo
+
+# Open the editor to import assets in case the cache was empty or outdated
+import-assets:
+  stage: import-assets
+  script:
+    - godot -v -e --quit --headless
+
+linux:
+  stage: export
+  script:
+    - mkdir -v -p build/linux
+    - cd $EXPORT_NAME
+    - godot -v --export-release --headless "Linux/X11" ../build/linux/$EXPORT_NAME.x86_64
+  artifacts:
+    name: $EXPORT_NAME-$CI_JOB_NAME
+    paths:
+      - build/linux
+
+windows:
+  stage: export
+  script:
+    - mkdir -v -p build/windows
+    - cd $EXPORT_NAME
+    - godot -v --export-release --headless "Windows Desktop" ../build/windows/$EXPORT_NAME.exe
+  artifacts:
+    name: $EXPORT_NAME-$CI_JOB_NAME
+    paths:
+      - build/windows
+
+mac:
+  stage: export
+  script:
+    - mkdir -v -p build/mac
+    - cd $EXPORT_NAME
+    - godot -v --export-release --headless "macOS" ../build/mac/$EXPORT_NAME.zip
+  artifacts:
+    name: $EXPORT_NAME-$CI_JOB_NAME
+    paths:
+      - build/mac
+
+web:
+  stage: export
+  script:
+    - mkdir -v -p build/web
+    - cd $EXPORT_NAME
+    - godot -v --export-release --headless "HTML5" ../build/web/index.html
+  artifacts:
+    name: $EXPORT_NAME-$CI_JOB_NAME
+    paths:
+      - build/web
+
+pages:
+  stage: deploy
+  dependencies:
+    - web
+  script:
+    # This ensures the `pages` branch is available.
+    - git fetch
+    - git checkout pages
+    - rm -f *.md
+    - mv build/web/** ./public
+  artifacts:
+    paths:
+      - public
