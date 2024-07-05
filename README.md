@@ -1,3 +1,5 @@
+### Circuits Escape Room
+
 ## Project Name
 Circuits Escape Room
 
@@ -5,7 +7,7 @@ Circuits Escape Room
 Circuits Escape Room is an innovative study tool designed for the Computer and Electrical Engineering department. Tailored for the Circuits course, this interactive platform merges educational content with engaging gameplay. Users navigate through an escape room setting where they encounter trivia questions related to circuits coursework. Correct answers advance players toward 'escaping' the room, fostering learning through gamified challenges that enhance understanding of circuit basics.
 
 ## Visuals
-Depending on what you are making, it can be a good idea to include screenshots or even a video (you'll frequently see GIFs rather than actual videos). Tools like ttygif can help, but check out Asciinema for a more sophisticated method.
+![alt text](https://github.com/lalittrivedi98/circuits-escape-room/blob/main/gameplay.jpg?raw=true)
 
 ## Installation
 Download our repository as a .zip file. Open Godot and select the import and install option. Then select the .zip file you just downloaded and Godot should load the project. Once all the files are loaded, press the play button (triangle pointing right), which is on the top right corner in Godot, and the game should begin.
